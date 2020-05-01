@@ -17,18 +17,24 @@ using namespace std;
 // as listed in the interface file.
 
 // Default constructor
-	/*CharacterType::CharacterType()
-	{
-		data = 0;
-	}*/
+CharacterType::CharacterType()
+{
+	id = 0;
+}
 
-	// Overloaded constructor
+// Overloaded constructor
+CharacterType::CharacterType(string fName, string lName, int ID)
+{
+	firstName = fName;
+	lastName = lName;
+	id = ID;
+}
 
 // setCharacterInfo Function
-void CharacterType::setCharacterInfo(string lName, string fName, int ID)
+void CharacterType::setCharacterInfo(string fName, string lName, int ID)
 {
-	lastName = lName;
 	firstName = fName;
+	lastName = lName;
 	id = ID;
 }
 

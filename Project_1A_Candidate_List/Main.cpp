@@ -22,7 +22,7 @@ int main()
 {
 	// test cases
 	CharacterType chartype;
-	chartype.setCharacterInfo("Iacob", "Marius", 123456);
+	chartype.setCharacterInfo("Marius", "Iacob", 123456);
 	//chartype.printID();
 	chartype.printCharacterInfo();
 	cout << endl;
@@ -32,5 +32,3 @@ int main()
 	system("Pause");
 	return 0;
 }
-
-// test
