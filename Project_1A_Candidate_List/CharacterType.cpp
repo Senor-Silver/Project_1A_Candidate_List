@@ -30,7 +30,7 @@ CharacterType::CharacterType(string fName, string lName, int ID)
 	id = ID;
 }
 
-// setCharacterInfo Function
+// Function setCharacterInfo
 void CharacterType::setCharacterInfo(string fName, string lName, int ID)
 {
 	firstName = fName;

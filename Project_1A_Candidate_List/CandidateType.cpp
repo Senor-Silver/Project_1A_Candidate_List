@@ -15,3 +15,40 @@ using namespace std;
 
 // Implement all functions in the SAME order
 // as listed in the interface file.
+
+	// Default constructor
+
+	// Copy constructor
+	/*CandidateType(const candidateType& type)
+	{
+
+	}*/
+
+	// Copy assignment operator
+
+	// updateVotesByKingdom
+
+// Getters Functions
+int CandidateType::getTotalVotes()
+{
+	return totalVotes;
+}
+int getVotesByKingdom(int kindomVotes[])
+{
+	//return kindomVotes;
+}
+
+// Printing Functions
+void printCandidateInfo()
+{
+
+}
+void printCandidateTotalVotes()
+{
+
+}
+
+CandidateType::~CandidateType()
+{
+
+}

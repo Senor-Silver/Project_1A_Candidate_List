@@ -29,7 +29,7 @@ class CandidateType	: public CharacterType
 {
 public:
 	// Default constructor
-
+	
 	// Copy constructor
 	/*CandidateType(const candidateType& type)
 	{
@@ -40,23 +40,13 @@ public:
 
 	// updateVotesByKingdom
 
-	int getTotalVotes()
-	{
-		return totalVotes;
-	}
-	int getVotesByKingdom()
-	{
-		//return VotesByKingdom;
-	}
+	// Getters Functions
+	int getTotalVotes();
+	int getVotesByKingdom(int kindomVotes[]);
 
-	void printCandidateInfo()
-	{
-
-	}
-	void printCandidateTotalVotes()
-	{
-
-	}
+	// Printing Functions
+	void printCandidateInfo();
+	void printCandidateTotalVotes();
 
 	// Destructor
 	~CandidateType();
