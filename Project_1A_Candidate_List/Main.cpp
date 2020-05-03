@@ -26,8 +26,28 @@ int main()
 	chartype.printCharacterInfo();
 	cout << endl;
 	chartype.printName();
+	cout << endl;
 
-	cout  <<  endl;
+	CandidateType firstRunnerUP;
+
+	firstRunnerUP.printCandidateInfo();
+	// This is an empty Candidate, MUST FIX
+	cout << endl;
+
+	firstRunnerUP.setCharacterInfo("Allan", "Poe", 626285);
+	firstRunnerUP.printCandidateInfo();
+	cout << endl;
+
+	CandidateType secondCandidate(firstRunnerUP);
+	secondCandidate.printCandidateInfo();
+	cout << endl;
+
+	CandidateType thirdCandidate;
+	thirdCandidate = secondCandidate;
+	thirdCandidate.printCandidateInfo();
+	cout << endl;
+
+	cout << endl;
 	system("Pause");
 	return 0;
 }

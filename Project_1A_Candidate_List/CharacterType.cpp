@@ -39,15 +39,15 @@ void CharacterType::setCharacterInfo(string lName, string fName, int ID)
 }
 
 // Getters Functions
-string CharacterType::getFirstName()
+string CharacterType::getFirstName() const
 {
 	return firstName;
 }
-string CharacterType::getLastName()
+string CharacterType::getLastName() const
 {
 	return lastName;
 }
-int CharacterType::getID()
+int CharacterType::getID() const
 {
 	return id;
 }
@@ -55,16 +55,15 @@ int CharacterType::getID()
 // Printing Functions
 void CharacterType::printName() const
 {
-	cout << getlastName() << ", " << getFirstName();
+	cout << lastName << ", " << firstName;
 }
 void CharacterType::printCharacterInfo() const 
 {
-	cout << "ID# " << printID() << getFirstName()
-		<< " " << getLastName();
+	cout << "ID# " << id << firstName << lastName;
 }
 void CharacterType::printID() const
 {
-	cout << "ID# " << getID();
+	cout << "ID# " << id;
 }
 
 // Destructor

@@ -28,9 +28,9 @@ public:
 	void setCharacterInfo(std::string fName, std::string lName, int ID);
 		
 	// Getters Functions
-	std::string getFirstName();
-	std::string getLastName();
-	int getID();
+	std::string getFirstName() const;
+	std::string getLastName() const;
+	int getID() const;
 
 	// Printing Functions
 	void printName() const;

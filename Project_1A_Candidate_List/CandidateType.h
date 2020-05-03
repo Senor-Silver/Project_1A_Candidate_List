@@ -35,30 +35,21 @@ public:
 	CandidateType(const CandidateType& otherType);
 
 	// Copy assignment operator
+	CandidateType& operator=(const CandidateType & rhs);
 
 	// updateVotesByKingdom
+	void updateVotesByKingdom(int kingdomIndex, int numOfVotes);
 
-	int getTotalVotes()
-	{
-		return totalVotes;
-	}
-	int getVotesByKingdom()
-	{
-		//return VotesByKingdom;
-	}
+	// Getter Methods
+	int getTotalVotes() const;
+	int getVotesByKingdom(int index) const;
 
-	void printCandidateInfo()
-	{
-
-	}
-	void printCandidateTotalVotes()
-	{
-
-	}
+	// Print Functions
+	void printCandidateInfo() const;
+	void printCandidateTotalVotes() const;
 
 	// Destructor
 	~CandidateType();
-
 	
 private:
 	int totalVotes;
