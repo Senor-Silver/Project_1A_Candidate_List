@@ -19,25 +19,23 @@ class CharacterType
 {
 public:
 	// Default constructor
-	/*CharacterType::CharacterType()
-	{
-		data = 0;
-	}*/
+	CharacterType();
   		
 	// Overloaded constructor
-	
+	CharacterType(std::string lastN, std::string firstN, int ID);
+
 	// setCharacterInfo Function
 	void setCharacterInfo(std::string fName, std::string lName, int ID);
 		
 	// Getters Functions
 	std::string getFirstName();
-	std::string getlastName();
+	std::string getLastName();
 	int getID();
 
 	// Printing Functions
-	void printName();
-	void printCharacterInfo();
-	void printID();
+	void printName() const;
+	void printCharacterInfo() const;
+	void printID() const;
 
 	// Destructor
 	~CharacterType();

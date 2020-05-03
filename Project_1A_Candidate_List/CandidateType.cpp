@@ -15,3 +15,13 @@ using namespace std;
 
 // Implement all functions in the SAME order
 // as listed in the interface file.
+// Default Constructor
+CandidateType::CandidateType()
+{
+	totalVotes = 0;
+	numOfKingdoms = NUM_OF_KINGDOMS;
+	kingdomVotes = new int[numOfKingdoms];
+}
+
+// Copy Constructor
+CadidateType::CandidateType()

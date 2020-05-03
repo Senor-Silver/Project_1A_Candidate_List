@@ -1,7 +1,7 @@
 /*
 		TeamName: OOPS
 		 Iacob, Marius (TTh 6:30)
-		 Catillio, Edgar (TTh 6:30)
+		 Castillo, Edgar (TTh 6:30)
 
 		 Sunday, May 3, 2020
 
@@ -21,9 +21,8 @@ using namespace std;
 int main()
 {
 	// test cases
-	CharacterType chartype;
-	chartype.setCharacterInfo("Iacob", "Marius", 123456);
-	//chartype.printID();
+	CharacterType chartype("Iacob", "Marius", 123456);
+	chartype.printID();
 	chartype.printCharacterInfo();
 	cout << endl;
 	chartype.printName();

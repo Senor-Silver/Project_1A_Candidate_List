@@ -17,12 +17,18 @@ using namespace std;
 // as listed in the interface file.
 
 // Default constructor
-	/*CharacterType::CharacterType()
-	{
-		data = 0;
-	}*/
+CharacterType::CharacterType()
+{
+	id = 0;
+}
 
-	// Overloaded constructor
+// Overloaded constructor
+CharacterType::CharacterType(string lastN, string firstN, int ID)
+{
+	lastName = lastN;
+	firstName = firstN;
+	id = ID;
+}
 
 // setCharacterInfo Function
 void CharacterType::setCharacterInfo(string lName, string fName, int ID)
@@ -37,7 +43,7 @@ string CharacterType::getFirstName()
 {
 	return firstName;
 }
-string CharacterType::getlastName()
+string CharacterType::getLastName()
 {
 	return lastName;
 }
@@ -47,22 +53,19 @@ int CharacterType::getID()
 }
 
 // Printing Functions
-void CharacterType::printName()
+void CharacterType::printName() const
 {
-	cout << getlastName() << " " << getFirstName();
+	cout << getlastName() << ", " << getFirstName();
 }
-void CharacterType::printCharacterInfo()
+void CharacterType::printCharacterInfo() const 
 {
-	printID();
-	printName();
+	cout << "ID# " << printID() << getFirstName()
+		<< " " << getLastName();
 }
-void CharacterType::printID()
+void CharacterType::printID() const
 {
-	cout << "ID# " << getID() << " ";
+	cout << "ID# " << getID();
 }
 
 // Destructor
-CharacterType::~CharacterType()
-{
-
-}
+CharacterType::~CharacterType(){}

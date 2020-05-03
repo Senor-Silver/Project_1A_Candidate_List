@@ -29,6 +29,7 @@ class CandidateType	: public CharacterType
 {
 public:
 	// Default constructor
+	CandidateType();
 
 	// Copy constructor
 	/*CandidateType(const candidateType& type)
@@ -65,7 +66,7 @@ public:
 private:
 	int totalVotes;
 	int numOfKingdoms;
-	int *kingdomVotes;
+	int* kingdomVotes;
 };
 
 #endif
