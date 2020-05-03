@@ -25,7 +25,7 @@ const std::string KINGDOMS[] = {
 	"Dorne" 
 };
 
-class CandidateType	: public CharacterType
+class CandidateType : public CharacterType
 {
 public:
 	// Default constructor
@@ -35,7 +35,7 @@ public:
 	CandidateType(const CandidateType& otherType);
 
 	// Copy assignment operator
-	CandidateType& operator=(const CandidateType & rhs);
+	CandidateType& operator=(const CandidateType& rhs);
 
 	// updateVotesByKingdom
 	void updateVotesByKingdom(int kingdomIndex, int numOfVotes);
@@ -50,7 +50,7 @@ public:
 
 	// Destructor
 	~CandidateType();
-	
+
 private:
 	int totalVotes;
 	int numOfKingdoms;
