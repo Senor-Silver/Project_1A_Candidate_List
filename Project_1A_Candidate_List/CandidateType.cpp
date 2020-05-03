@@ -24,4 +24,26 @@ CandidateType::CandidateType()
 }
 
 // Copy Constructor
-CadidateType::CandidateType()
+CandidateType::CandidateType(const CandidateType& otherType)
+{
+	totalVotes = otherType.totalVotes;
+	numOfKingdoms = otherType.numOfKingdoms;
+	kingdomVotes = otherType.kingdomVotes;
+}
+
+// Copy Assingment operator
+
+// updateVotesByKingdom
+
+// getTotalValues
+
+// getVotesByKingdom
+
+// print functions
+
+
+// Destructor
+CandidateType::~CandidateType()
+{
+
+}

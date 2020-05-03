@@ -32,10 +32,7 @@ public:
 	CandidateType();
 
 	// Copy constructor
-	/*CandidateType(const candidateType& type)
-	{
-
-	}*/
+	CandidateType(const CandidateType& otherType);
 
 	// Copy assignment operator
 
